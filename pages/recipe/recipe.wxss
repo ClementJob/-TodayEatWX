@@ -1,0 +1,52 @@
+/* pages/recipe/recipe.wxss */
+
+@import"../../app.wxss";
+@import "../../icon.wxss";
+page {
+    background: rgba(250, 233, 208, 0.3);
+}
+
+.onaddwork {
+    background-color: rgba(249, 113, 113, 1);
+    border-radius: 0;
+    font-weight: bold;
+    color: white;
+}
+
+.cbody {
+    margin: 10rpx 4%;
+}
+
+.cbody>.row {
+    margin-bottom: 40rpx;
+}
+
+.cbody image {
+    width: 100%;
+    height: 450rpx;
+    border-radius: 12rpx;
+}
+
+.cbody .iconfont text {
+    margin-left: 10rpx;
+}
+
+.cbody .iconfont {
+    color: rgb(58, 58, 58)
+}
+
+.recipeslisthead {
+    position: relative;
+}
+
+.recipeslisttitle {
+    background-color: rgba(12, 0, 0, 0.247);
+    position: absolute;
+    width: 100%;
+    height: 450rpx;
+    border-radius: 12rpx;
+    line-height: 450rpx;
+    font-size: 60rpx;
+    font-weight: bold;
+    color: white;
+}

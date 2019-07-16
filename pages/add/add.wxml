@@ -1,0 +1,49 @@
+<!-- pages/add/add.wxml -->
+<!-- 添加作品 -->
+<view class="content">
+    <view class="chead_img" catchtap="onAddCoverImage">
+        <text class="chi_url_mes">+ 作品封面</text>
+        <image src="{{coverImg}}" class="chi_url" />
+    </view>
+    <view class="cbody">
+        <view class="chead_title">
+            <input type="text" class="cht_input" placeholder="请输入名称" value="" />
+        </view>
+        <view class="chead_des">
+            <textarea class="cht_des_input" placeholder="请描述这道美食"></textarea>
+        </view>
+        <view class="cmaterials">
+            <h3>用料</h3>
+            <h1>猜你可能需要用到:</h1>
+            <view class="defultMa">
+                <block wx:for="{{defultMaterials}}" wx:for-index="index">
+                    <text class="dmData">{{item}}</text>
+                </block>
+            </view>
+            <view class="addMaList">
+                <view class="addMa">
+                    <input type="text" class="maName" placeholder="食材：如鸡蛋" />
+                    <input type="text" class="maNum" placeholder="用量：如1只" />
+                </view>
+            </view>
+            <view class="addMaBtn">再增加一项</view>
+        </view>
+        <view class="cpractice">
+            <h3>做法</h3>
+            <block wx:for="{{practices}}" wx:for-index="index">
+                <view>
+                    <h3 class="maT">步骤{{index+1}}</h3>
+                    <view class="cplist_img">
+                        <text class="cplist_img_mes">+步骤图</text>
+                        <image src="{{item.imgUrl}}" class="cplist_img_url" />
+                    </view>
+                    <textarea class="cplist_text" placeholder="添加步骤说明" value="{{item.description}}"></textarea>
+                </view>
+            </block>
+            <view class="addMaBtn" bindtap="addMaList">再增加一步</view>
+        </view>
+    </view>
+    <view class="cfoot">
+        <button class="inputBtn">发布这个作品</button>
+    </view>
+</view>

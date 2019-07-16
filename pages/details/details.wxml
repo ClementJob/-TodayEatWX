@@ -1,0 +1,89 @@
+<!-- pages/details/details.wxml -->
+<view class="container">
+    <view class="topimg" style="background-image: url('{{topimg}}')"></view>
+    <view class="content">
+        <view class="user">
+            <view class="user-headimg">
+                <image src="{{headimg}}" />
+            </view>
+            <view class="user-nickname">{{nickname}}</view>
+        </view>
+        <view class="text">
+            <textarea>
+                我一直很喜欢虾仁滑蛋，但是外面吃经常会配上一份饭，自己在家做就可以只吃虾仁滑蛋不吃米饭了哈哈哈，食材都是很健康哒，做法太简单啦！嫩嫩的蛋配上鲜甜的虾仁，满足！
+            </textarea>
+            <h2>用料</h2>
+            <view class="row">
+                <view class="col">
+                    <view class="col-6">虾仁</view>
+                    <view class="col-6">300克</view>
+                </view>
+                <view class="col">
+                    <view class="col-6">鸡蛋</view>
+                    <view class="col-6">4个</view>
+                </view>
+                <view class="col">
+                    <view class="col-6">油</view>
+                    <view class="col-6">克</view>
+                </view>
+                <view class="col">
+                    <view class="col-6">盐</view>
+                    <view class="col-6">2克</view>
+                </view>
+                <view class="col">
+                    <view class="col-6">料酒</view>
+                    <view class="col-6">1勺</view>
+                </view>
+                <view class="col">
+                    <view class="col-6">黑胡椒粉</view>
+                    <view class="col-6">克</view>
+                </view>
+                <view class="col">
+                    <view class="col-6">淀粉</view>
+                    <view class="col-6">1勺</view>
+                </view>
+                <view class="col">
+                    <view class="col-6">白胡椒粉</view>
+                    <view class="col-6">2克</view>
+                </view>
+                <view class="col"></view>
+            </view>
+            <block wx:for="{{Steps}}" wx:for-index="idd">
+                <h2>步骤{{idd+1}}</h2>
+                <view class="row">
+                    <view class="col">
+                        <view class="col-12">
+                            <image class="buzhouimg" src="{{item.img}}" />
+                        </view>
+                    </view>
+                    <view class="col">
+                        <view class="col-12">{{item.text}}</view>
+                    </view>
+                </view>
+            </block>
+        </view>
+        <view class="message">
+            <view class="mgs-title">
+                评论
+                <text class="mgs-title-num">{{mgsnum}}</text>
+            </view>
+            <view class="messageContent">
+                <block wx:for="{{Comments}}" wx:for-index="index">
+                    <view class="msageCList">
+                        <view class="msageImg">
+                            <image src="{{item.headImg}}" />
+                        </view>
+                        <view class="msageText">
+                            <view class="msageNickName">{{item.nickName}}</view>
+                            <view class="msageTime">{{item.time}}</view>
+                            <view class="msageText">{{item.text}}</view>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+    <view class="message-box">
+        <input type="text" class="mgs-box-input" placeholder="留言" />
+    </view>
+</view>

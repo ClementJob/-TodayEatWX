@@ -1,0 +1,38 @@
+<!-- pages/recipe/recipe.wxml -->
+<!-- <view class="content">
+    <view class="cbody">
+        <block wx:for="{{recipes}}" wx:for-index="index">
+            <view class="recipesList">
+                <image src="{{item.url}}" class="recipeslistimg" />
+                <text class="recipeslisttitle">{{item.title}}</text>
+                <view class="recipeslistnum row">
+                <view class="col">
+                    <view class="col-3"></view>
+                    <view class="col-3"></view>
+                    <view class="col-3"></view>
+                </view>
+                </view>
+            </view>
+        </block>
+    </view>
+</view> -->
+<view class="content">
+    <button bindtap="onAdd" class="onaddwork">添加作品</button>
+    <view class="cbody">
+        <block wx:for="{{recipes}}" wx:for-index="index">
+            <view class="row">
+                <view class="col">
+                    <view class="col-12 algin-centent recipeslisthead">
+                        <text class="recipeslisttitle">{{item.title}}</text>
+                        <image src="{{item.url}}" class="recipeslistimg" />
+                    </view>
+                </view>
+                <view class="col algin-centent">
+                    <view class="col-4 iconfont icon-like"><text >{{item.likes}}</text></view>
+                    <view class="col-4 iconfont icon-star"><text >{{item.comments}}</text></view>
+                    <view class="col-4 iconfont icon-comment"><text >{{item.collection}}</text></view>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

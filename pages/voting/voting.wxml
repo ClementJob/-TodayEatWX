@@ -1,0 +1,27 @@
+<!-- pages/voting/voting.wxml -->
+<view class="content">
+    <view class="chead">
+        <view class="ch-title">{{voteData.title}}<text class="cht_text"> [{{voteData.isRadio?"单选":"多选"}}]</text></view>
+        <view class="ch-text">
+            <view class="cht-time">共{{voteData.data.length}}个选项</view>
+            <view class="cht-users">由{{voteData.userName}}发起 已有{{voteData.allPeople}}人报名</view>
+        </view>
+    </view>
+    <view class="cbody">
+        <view class="cb_content">
+            <block wx:for="{{voteData.data}}" wx:for-index="index">
+                <view class="cbc_options" catchtap="OnVote" data-post-id="{{item.id}}">
+                    <view class="cbco_content">
+                        <view class="cbco_text">{{item.name}}</view>
+                        <view class="cbco_num">{{item.user.length}}票</view>
+                    </view>
+                    <view class="cbco_user">
+                        <block wx:for="{{item.user}}" wx:for-index="index1">
+                            <image src="{{item.headimg}}" />
+                        </block>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

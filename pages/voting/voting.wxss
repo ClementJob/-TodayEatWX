@@ -1,0 +1,66 @@
+/* pages/voting/voting.wxss */
+
+page {
+    background: rgba(250, 233, 208, 0.3);
+}
+
+.content {
+    margin-top: 4%;
+}
+
+.chead {
+    margin: 4% 4%;
+    font-size: 30rpx;
+    color: #ccc;
+}
+
+.ch-title {
+    font-weight: bold;
+    margin-top: 20rpx;
+    color: black;
+    font-size: 40rpx;
+}
+
+.cht_text {
+    padding-left: 20rpx;
+    color: rgba(236, 199, 146, 1);
+}
+
+.ch-text>view {
+    margin-top: 10rpx;
+}
+
+.cbco_user>image {
+    width: 70rpx;
+    height: 70rpx;
+    border-radius: 12rpx;
+    margin: 10rpx;
+}
+
+.cbc_options {
+    padding: 10rpx 0rpx;
+}
+
+.cbco_content {
+    padding: 35rpx 0;
+    background-color: white;
+    box-shadow: 5rpx 5rpx 5rpx rgba(0, 0, 0, 0.16);
+}
+
+.cbco_content>view {
+    display: inline-block;
+}
+
+.cbco_text {
+    width: 75%;
+    margin-left: 20rpx;
+}
+
+.cbco_num {
+    width: 15%;
+    text-align: right;
+}
+
+.cbco_user {
+    padding: 10rpx 15rpx;
+}

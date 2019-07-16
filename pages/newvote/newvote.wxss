@@ -1,0 +1,84 @@
+/* pages/newvote/newvote.wxss */
+
+page {
+    background: rgba(250, 233, 208, 0.3);
+}
+
+.content {
+    padding: 0%;
+}
+
+.chead {
+    background-color: white;
+    padding-bottom: 20rpx;
+}
+
+.options {
+    margin: 0rpx 5%;
+    padding: 2%;
+    width: 70%;
+    border-bottom: 1rpx solid #ccc;
+    line-height: 70rpx;
+    font-size: 45rpx;
+    height: 75rpx;
+    display: inline-block;
+}
+
+.box {
+    clear: both;
+    overflow: hidden;
+}
+
+.del {
+    font-weight: bold;
+    width: 10%;
+    display: inline-block;
+    margin-bottom: 10rpx;
+}
+
+.addOption {
+    padding: 20rpx 4%;
+    width: 90%;
+    color: rgba(249, 113, 113, 1);
+    font-weight: bold;
+    line-height: 70rpx;
+}
+
+.addOption>text {
+    font-size: 50rpx;
+}
+
+.cbody {
+    margin-top: 50rpx;
+    margin-bottom: 50rpx;
+    background: white;
+    padding: 20rpx 4%;
+}
+
+.section__title,
+.section>timePicker {
+    display: inline-block;
+}
+
+.section {
+    padding: 15rpx;
+}
+
+.section__title {
+    width: 30%;
+}
+
+.section>timePicker {
+    text-align: right;
+    width: 70%;
+}
+
+.cfoot {
+    margin: 10rpx 4%;
+}
+
+.cfoot>button {
+    background-color: rgba(249, 113, 113, 1);
+    color: white;
+    font-weight: bold;
+}

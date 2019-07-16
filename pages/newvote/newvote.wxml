@@ -1,0 +1,27 @@
+<!-- pages/newvote/newvote.wxml -->
+<import src="../../components/timePicker/timePicker.wxml"></import>
+<view class="content">
+    <view class="chead">
+        <block wx:for='{{array}}' wx:key=''>
+            <view class='box'>
+                <input type='text' class='options' placeholder='请输入菜谱' data-idx='{{index}}' value='{{inputVal[index]}}' bindinput='getInputVal' />
+                <view class='del' bindtap='delInput' data-idx='{{index}}'>删除</view>
+            </view>
+        </block>
+        <view class="addOption" bindtap='addInput'>
+            <text>+</text>
+            添加选项
+        </view>
+    </view>
+    <view class="cbody">
+        <view class="section">
+            <view class="section__title" style="margin-bottom:0;">截止时间</view>
+            
+            <timePicker id="timePicker_1"></timePicker>
+        </view>
+    </view>
+    
+    <view class="cfoot">
+        <button type="default" catchtap="addVote">发起投票</button>
+    </view>
+</view>

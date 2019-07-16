@@ -1,0 +1,57 @@
+<!-- index.wxml -->
+<view class="container">
+  <view class="back-top"></view>
+  <swiper class='u-wrp-bnr swiper-box' indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true' catchtap="onSwiperTap">
+    <block wx:for="{{bnrUrl}}" wx:for-index="index">
+      <swiper-item class="u-warp-text-parent" item-id="{{item.id}}">
+        <image src='{{item.url}}' class='u-img-slide slide-image' mode='aspectFill' data-post-id="{{item.bnrid}}"></image>
+        <text class="u-wrp-show-title">{{item.title}}</text>
+        <text class="u-wrp-show-text">{{item.text}}</text>
+        <text class="u-wrp-show-num u-wrp-show-num-likes iconfont icon-like">{{item.Likes}}</text>
+        <text class="u-wrp-show-num u-wrp-show-num-comments iconfont icon-star">{{item.Comments}}</text>
+        <text class="u-wrp-show-num u-wrp-show-num-collection iconfont icon-comment">{{item.Collection}}</text>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="u-message-text">
+    <text class="u-message-text-title">今日消息</text>
+    <block wx:for="{{messages}}" wx:for-index="index">
+      <view class="u-message-text-cont" catchtap="onVote">{{item.text}}</view>
+    </block>
+  </view>
+  <view class="u-message-text">
+ <view class="u-message-text-title">本周推荐</view>
+  <view class='u-re-view'>
+    <scroll-view scroll-x scroll-into-view='item2'>
+      <block wx:for="{{re}}" wx:for-index="index">
+        <view id='item1' class='u-re-list' catchtap="onSwiperTap" item-id="{{item.id}}">
+          <view class='inner'>
+            <image src="{{item.url}}" class="u-re-list-img"  />
+          </view>
+          <view class="u-re-list-title">{{item.title}}</view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+  </view>
+ 
+  <!-- <view class="u-wrp-show">
+  <view class="u-wrp-show-title">菜品名</view>
+  <view class="u-wrp-show-text">菜品简单介绍展示。</view>
+  <view class="u-wrp-show-num">
+    <view class="iconfont icon-like"><font>111</font></view>
+    <view class="iconfont icon-star"><font>222</font></view>
+    <view class="iconfont icon-comment"><font>333</font></view>
+  </view>
+</view> -->
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 用户登录 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <!-- <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+</view>

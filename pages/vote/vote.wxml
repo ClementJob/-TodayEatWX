@@ -1,0 +1,23 @@
+<!-- pages/vote/vote.wxml -->
+<view class="content">
+    <view class="chead">
+        <view class="head_title">最近参加的投票</view>
+        <view class="head_archive" catchtap="onNewVote">
+            <text>新建</text>
+        </view>
+    </view>
+    <view class="cbody">
+        <block wx:for="{{voteData}}" wx:for-index="index">
+            <view class="cblist" catchtap="onVote" data-post-id="{{item.id}}">
+                <view class="cbl_title">
+                    <view class="cbl_t_text">{{item.text}}</view>
+                    <view class="cbl_t_state">{{item.state}}</view>
+                </view>
+                <view class="cbl_options">计划区间：{{item.num}}个选项</view>
+                <view class="cbl_members">
+                    报名成员：{{item.user[0].nickname}}等{{item.user.length}}个成员
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

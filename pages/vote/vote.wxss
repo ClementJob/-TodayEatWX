@@ -1,0 +1,85 @@
+/* pages/vote/vote.wxss */
+
+page {
+    background: rgba(250, 233, 208, 0.3);
+}
+
+.content {
+    padding: 0%;
+}
+
+.chead {
+    height: 100rpx;
+    padding-left: 15rpx;
+}
+
+.chead>view {
+    display: inline-block;
+    line-height: 100rpx;
+}
+
+.head_title {
+    width: 70%;
+    font-size: 40rpx;
+    font-weight: bold;
+}
+
+.head_archive {
+    width: 25%;
+    text-align: center;
+}
+
+.head_archive>text {
+    background-color: rgba(249, 113, 113, 1);
+    border-radius: 20%/50%;
+    color: white;
+    font-weight: bold;
+    padding: 10rpx 20rpx;
+}
+
+.cfoot {
+    height: 100rpx;
+}
+
+.cbody {
+    padding-bottom: 30rpx;
+}
+
+.cblist {
+    background-color: white;
+    border-top: 1rpx solid #ccc;
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+    padding-left: 15rpx;
+    padding-right: 15rpx;
+}
+
+.cbl_title {
+    margin-bottom: 20rpx;
+    line-height: 35rpx;
+}
+
+.cbl_t_text,
+.cbl_t_state {
+    display: inline-block;
+}
+
+.cbl_t_text {
+    font-size: 35rpx;
+    font-weight: bold;
+}
+
+.cbl_t_state {
+    margin-left: 20rpx;
+    color: green;
+    font-size: 25rpx;
+    border-radius: 20%/50%;
+    border: 1rpx solid green;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+}
+
+.cbl_options,
+.cbl_members {
+    font-size: 35rpx;
+}

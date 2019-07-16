@@ -1,0 +1,226 @@
+    /**index.wxss**/
+    
+    @import "../../icon.wxss";
+    page {
+        background: rgba(250, 233, 208, 0.3);
+    }
+    
+    .container {
+        padding: 0%;
+        /* background: red; */
+    }
+    
+    .userinfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .back-top {
+        background: rgba(236, 199, 146, 1);
+        width: 100%;
+        height: 350rpx;
+        position: absolute;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+    }
+    
+    .userinfo-avatar {
+        width: 128rpx;
+        height: 128rpx;
+        margin: 20rpx;
+        border-radius: 50%;
+    }
+    
+    .userinfo-nickname {
+        color: #aaa;
+    }
+    
+    .usermotto {
+        margin-top: 200px;
+    }
+    
+    .u-wrp-bnr {
+        width: 95%;
+        height: 550rpx;
+        display: block;
+        position: relative;
+        top: 36rpx;
+        overflow: hidden;
+        border-radius: 24rpx;
+        text-align: center;
+    }
+    
+    .u-img-slide {
+        width: 95%;
+        height: inherit;
+        height: 80%;
+        border-radius: 24rpx;
+        box-shadow: 10rpx 10rpx 10rpx rgba(0, 0, 0, 0.16);
+    }
+    
+    .u-wrp-show {
+        width: 80%;
+        height: 180rpx;
+        top: -65rpx;
+        position: relative;
+        background: white;
+        display: block;
+        overflow: hidden;
+        z-index: inherit;
+        border-radius: 12rpx;
+        box-shadow: 10rpx 10rpx 10rpx rgba(0, 0, 0, 0.16);
+    }
+    
+    .u-wrp-bnr text {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background: white;
+        text-align: left;
+    }
+    
+    .u-wrp-show-num {
+        position: absolute;
+        width: 25%;
+        padding: 5rpx;
+        padding-bottom: 10rpx;
+        bottom: 60rpx;
+        font-size: 30rpx;
+        color: #ccc;
+        padding-left: 32rpx;
+        text-align: center;
+        box-shadow: 10rpx 10rpx 10rpx rgba(0, 0, 0, 0.16);
+    }
+    
+    .u-wrp-show-num-likes {
+        text-align: right;
+        margin-left: -27.5%;
+        border-bottom-left-radius: 12rpx;
+    }
+    
+    .u-wrp-show-num-collection {
+        margin-left: 27.6%;
+        border-bottom-right-radius: 12rpx;
+        box-shadow: 10rpx 10rpx 10rpx rgba(0, 0, 0, 0.16);
+    }
+    
+    .u-warp-text-parent {
+        position: relative;
+    }
+    
+    .u-wrp-show-title {
+        position: absolute;
+        width: 80%;
+        font-size: 45rpx;
+        padding-left: 36rpx;
+        padding-bottom: 5rpx;
+        padding-top: 5rpx;
+        font-weight: bold;
+        color: #A38e35;
+        bottom: 155rpx;
+        border-top-left-radius: 12rpx;
+        border-top-right-radius: 12rpx;
+        box-shadow: 10rpx 10rpx 10rpx rgba(0, 0, 0, 0.16);
+    }
+    
+    .u-wrp-show-text {
+        position: absolute;
+        width: 80%;
+        font-size: 30rpx;
+        padding-left: 36rpx;
+        padding-bottom: 10rpx;
+        color: #ccc;
+        border-bottom: 1px dashed rgba(112, 112, 112, 0.3);
+        bottom: 107rpx;
+        box-shadow: 10rpx 10rpx 10rpx rgba(0, 0, 0, 0.16);
+    }
+    
+    .swiper-box .wx-swiper-dots.wx-swiper-dots-horizontal {
+        margin-bottom: 0rpx;
+    }
+    
+    .swiper-box .wx-swiper-dot {
+        width: 40rpx;
+        height: 10rpx;
+        margin-left: 20rpx;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    
+    .swiper-box .wx-swiper-dot::before {
+        content: '';
+        flex-grow: 1;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 8rpx;
+    }
+    
+    .swiper-box .wx-swiper-dot-active::before {
+        background: rgba(163, 142, 53, 0.8);
+    }
+    
+    .u-message-text {
+        margin-top: 5%;
+        width: 100%;
+    }
+    
+    .u-message-text .u-message-text-title {
+        padding-left: 8%;
+        font-size: 30rpx;
+    }
+    
+    .u-message-text-cont {
+        width: 83%;
+        margin: auto;
+        background: white;
+        color: #ccc;
+        box-shadow: 10rpx 10rpx 10rpx rgba(0, 0, 0, 0.16);
+        border-radius: 8rpx;
+        margin-bottom: 15rpx;
+        display: -webkit-box;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        font-size: 28rpx;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        padding: 10rpx 30rpx;
+        line-height: 45rpx;
+    }
+    
+    .u-re-view {
+        /* background: #ddd; */
+        padding: 20px 10px;
+        width: 100%;
+        white-space: nowrap;
+        box-sizing: border-box;
+        padding-left: 40rpx;
+    }
+    /*设置行内块*/
+    
+    .u-re-view .u-re-list {
+        width: 100px;
+        height: 150px;
+        background: white;
+        display: inline-block;
+        margin-right: 20px;
+        border-radius: 8rpx;
+        box-shadow: 10rpx 10rpx 10rpx rgba(0, 0, 0, 0.16);
+    }
+    
+    .u-re-view .u-re-list .u-re-list-img {
+        width: 100%;
+        height: 300rpx;
+    }
+    
+    .u-re-list-title {
+        width: 100%;
+        color: #ccc;
+        display: -webkit-box;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        font-size: 28rpx;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }

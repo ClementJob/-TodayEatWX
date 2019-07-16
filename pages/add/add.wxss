@@ -1,0 +1,137 @@
+/* pages/add/add.wxss */
+
+page {
+    background: rgba(250, 233, 208, 0.3);
+}
+
+.content {
+    padding-bottom: 2rpx;
+}
+
+.chi_url {
+    background-color: rgba(112, 112, 112, 0.2);
+    width: 100%;
+    height: 400rpx;
+}
+
+.cbody {
+    margin: 0 5%;
+}
+
+.chi_url_mes {
+    position: absolute;
+    font-weight: bold;
+    width: 100%;
+    line-height: 400rpx;
+    text-align: center;
+}
+
+.chead_title>input {
+    font-size: 60rpx;
+    width: 100%;
+    line-height: 90rpx;
+    text-align: center;
+    height: 90rpx;
+    padding: 40rpx 0;
+    border-bottom: 1rpx solid #ccc;
+    margin-bottom: 30rpx;
+}
+
+.chead_des>textarea {
+    width: 100%;
+    height: 250rpx;
+}
+
+.cmaterials {
+    margin-bottom: 70rpx;
+}
+
+.cmaterials>h3 {
+    font-weight: bold;
+    margin-bottom: 30rpx;
+}
+
+.cmaterials>h1 {
+    display: inline-block;
+    width: 100%;
+    font-size: 30rpx;
+    color: rgb(130, 130, 130);
+    margin-bottom: 20rpx;
+}
+
+.defultMa {
+    border-bottom: 1rpx solid #ccc;
+    padding-bottom: 10rpx;
+}
+
+.defultMa>.dmData {
+    display: inline-block;
+    background-color: rgba(130, 130, 130, 0.3);
+    padding: 20rpx 20rpx;
+    margin-bottom: 10rpx;
+    margin-right: 10rpx;
+    border-radius: 12rpx;
+}
+
+.addMa>input {
+    text-align: left;
+    display: inline-block;
+    padding: 15rpx 0;
+    border-bottom: 1rpx solid #ccc;
+}
+
+.maName {
+    width: 60%;
+}
+
+.maNum {
+    width: 40%;
+}
+
+.addMaList {
+    margin-bottom: 15rpx;
+}
+
+.addMaBtn {
+    color: rgba(249, 113, 113, 1);
+}
+
+.cpractice>h3 {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 15rpx;
+}
+
+.cplist_img_mes {
+    position: absolute;
+    text-align: center;
+    width: 90%;
+    line-height: 250rpx;
+}
+
+.maT {
+    margin-bottom: 20rpx;
+}
+
+.cplist_img_url {
+    width: 100%;
+    height: 250rpx;
+    background-color: rgba(112, 112, 112, 0.2);
+    border-radius: 12rpx;
+    margin-bottom: 10rpx;
+}
+
+.cplist_text {
+    line-height: 50rpx;
+    height: 200rpx;
+}
+
+.inputBtn {
+    border: none;
+    background-color: rgba(249, 113, 113, 1);
+    color: white;
+    font-weight: bold;
+    border-radius: 0;
+    padding: 15rpx 0;
+    margin: 20rpx 0;
+}
